@@ -1,0 +1,25 @@
+.nav {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0 120px; }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .nav__item {
+    padding: 8px 24px; }
+  .nav__item-active {
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px; }
+  .nav__link {
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
+    .nav__link:hover {
+      color: #9fadc2; }
+
+/*# sourceMappingURL=nav.css.map */

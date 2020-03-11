@@ -1,0 +1,13 @@
+.gallery__heading {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.5px; }
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .gallery__heading {
+    margin: 0 auto; }
+
+/*# sourceMappingURL=gallery.css.map */
