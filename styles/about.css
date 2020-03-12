@@ -3,19 +3,34 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 152px; }
+  @media screen and (max-width: 550px) {
+    .about {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 64px; } }
   .about__heading {
-    width: 50%; }
+    width: 50%;
+    margin-top: 0; }
+    @media screen and (max-width: 550px) {
+      .about__heading {
+        width: 100%; } }
   .about__text {
     width: 50%;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 27px; }
+    @media screen and (max-width: 550px) {
+      .about__text {
+        width: 100%; } }
   .about__text--heading {
     width: 100%;
     font-size: 24px;
     line-height: 30px;
     color: #0075ff;
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 0; }
 
 /*# sourceMappingURL=about.css.map */

@@ -4,12 +4,22 @@
   background-image: url(../images/footer.png);
   background-size: cover;
   background-position: center; }
+  @media screen and (max-width: 550px) {
+    .footer {
+      height: 206px; } }
   .footer__logo {
     position: absolute;
     left: calc(50% - 115px / 2);
     bottom: 40px; }
+    @media screen and (max-width: 550px) {
+      .footer__logo {
+        bottom: 24px; } }
     .footer__logo .logo__img {
       width: 115px;
       height: 76px; }
+      @media screen and (max-width: 550px) {
+        .footer__logo .logo__img {
+          width: 77px;
+          height: 50px; } }
 
 /*# sourceMappingURL=footer.css.map */

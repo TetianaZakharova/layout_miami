@@ -2,6 +2,9 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0 120px; }
+  @media screen and (max-width: 550px) {
+    .nav {
+      display: none; } }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;

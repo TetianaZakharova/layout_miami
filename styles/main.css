@@ -33,11 +33,6 @@ ul {
 strong {
   font-weight: 500; }
 
-.heading {
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -1.5px; }
-
 .gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
   content: url(../images/crown.svg);
   position: absolute;
@@ -59,10 +54,23 @@ strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.toggle__span::before, .toggle__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
 .nav {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0 120px; }
+  @media screen and (max-width: 550px) {
+    .nav {
+      display: none; } }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -83,10 +91,36 @@ strong {
     .nav__link:hover {
       color: #9fadc2; }
 
-.heading {
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -1.5px; }
+.gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
+  content: url(../images/crown.svg);
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  top: 50%;
+  left: calc(50% - 11.5px); }
+
+.consultation__info-heading, .testimonials .person__name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0075ff; }
+
+.gallery__button, .consultation .button, .contacts .button {
+  height: 56px;
+  font-size: 16px;
+  line-height: 14px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.toggle__span::before, .toggle__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
 
 .gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
   content: url(../images/crown.svg);
@@ -109,6 +143,97 @@ strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.toggle__span::before, .toggle__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
+.toggle__mobile {
+  display: none; }
+
+.toggle__menu {
+  opacity: 0;
+  position: absolute;
+  top: -100%; }
+
+.toggle__btn {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1; }
+
+.toggle__item {
+  margin-bottom: 32px; }
+
+.toggle__link {
+  color: white;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.toggle__contact {
+  margin-top: 16px; }
+
+.toggle .contact__info {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #fff; }
+
+.toggle__menu:checked ~ .toggle__mobile {
+  display: block;
+  padding: 120px 20px 52px;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0075ff;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.5s;
+  transition: opacity 0.3s, -webkit-transform 0.5s;
+  transition: opacity 0.3s, transform 0.5s;
+  transition: opacity 0.3s, transform 0.5s, -webkit-transform 0.5s; }
+
+.toggle__span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
+
+.toggle__span::before {
+  content: "";
+  top: -8px; }
+
+.toggle__span::after {
+  content: "";
+  top: 8px; }
+
+.toggle__menu:checked ~ .toggle__btn > .toggle__span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.toggle__menu:checked ~ .toggle__btn > .toggle__span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0); }
+
+.toggle__menu:checked ~ .toggle__btn > .toggle__span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
 .header {
   height: 700px;
   padding: 56px 120px;
@@ -116,6 +241,10 @@ strong {
   background-size: cover;
   background-position: center;
   position: relative; }
+  @media screen and (max-width: 550px) {
+    .header {
+      padding: 40px 20px;
+      height: 100vh; } }
   .header__top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -126,17 +255,42 @@ strong {
     color: white;
     letter-spacing: 2px; }
   .header__logo {
-    margin-top: -32px; }
+    margin-top: -32px;
+    z-index: 2; }
+    @media screen and (max-width: 550px) {
+      .header__logo {
+        margin-top: -24px; } }
     .header__logo .logo__img {
       width: 115px;
       height: 76px; }
+      @media screen and (max-width: 550px) {
+        .header__logo .logo__img {
+          width: 77px;
+          height: 50px; } }
   .header__link-phone {
     color: white; }
+  @media screen and (max-width: 550px) {
+    .header__tel {
+      display: none; } }
+  .header__phone-icon {
+    display: none;
+    cursor: pointer; }
+    @media screen and (max-width: 550px) {
+      .header__phone-icon {
+        display: block; } }
+  @media screen and (max-width: 550px) {
+    .header__action {
+      display: none; } }
   .header__link-order {
     text-transform: uppercase;
     padding-bottom: 8px;
     border-bottom: 1px solid #fff;
     color: white; }
+  .header__toggle {
+    display: none; }
+    @media screen and (max-width: 550px) {
+      .header__toggle {
+        display: block; } }
   .header__heading {
     font-size: 60px;
     line-height: 60px;
@@ -144,6 +298,12 @@ strong {
     color: #fff;
     position: absolute;
     bottom: 165px; }
+    @media screen and (max-width: 550px) {
+      .header__heading {
+        font-size: 46px;
+        line-height: 40px;
+        letter-spacing: -1px;
+        bottom: 80px; } }
     .header__heading::before {
       content: "";
       position: absolute;
@@ -166,10 +326,36 @@ strong {
           -ms-flex-pack: justify;
               justify-content: space-between; }
 
-.heading {
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -1.5px; }
+.gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
+  content: url(../images/crown.svg);
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  top: 50%;
+  left: calc(50% - 11.5px); }
+
+.consultation__info-heading, .testimonials .person__name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0075ff; }
+
+.gallery__button, .consultation .button, .contacts .button {
+  height: 56px;
+  font-size: 16px;
+  line-height: 14px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.toggle__span::before, .toggle__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
 
 .gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
   content: url(../images/crown.svg);
@@ -192,56 +378,50 @@ strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-.heading {
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -1.5px; }
-
-.gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
-  content: url(../images/crown.svg);
+.toggle__span::before, .toggle__span::after {
+  display: block;
   position: absolute;
-  width: 23px;
-  height: 16px;
-  top: 50%;
-  left: calc(50% - 11.5px); }
-
-.consultation__info-heading, .testimonials .person__name {
-  font-size: 24px;
-  line-height: 30px;
-  color: #0075ff; }
-
-.gallery__button, .consultation .button, .contacts .button {
-  height: 56px;
-  font-size: 16px;
-  line-height: 14px;
-  border-radius: 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
 
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 152px; }
+  @media screen and (max-width: 550px) {
+    .about {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 64px; } }
   .about__heading {
-    width: 50%; }
+    width: 50%;
+    margin-top: 0; }
+    @media screen and (max-width: 550px) {
+      .about__heading {
+        width: 100%; } }
   .about__text {
     width: 50%;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 27px; }
+    @media screen and (max-width: 550px) {
+      .about__text {
+        width: 100%; } }
   .about__text--heading {
     width: 100%;
     font-size: 24px;
     line-height: 30px;
     color: #0075ff;
-    font-weight: bold; }
-
-.heading {
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -1.5px; }
+    font-weight: bold;
+    margin: 0; }
 
 .gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
   content: url(../images/crown.svg);
@@ -264,8 +444,21 @@ strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.toggle__span::before, .toggle__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
 .gallery {
   margin-bottom: 152px; }
+  @media screen and (max-width: 550px) {
+    .gallery {
+      margin-bottom: 64px; } }
   .gallery__heading {
     margin: 0 auto;
     position: relative;
@@ -276,10 +469,19 @@ strong {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 256px;
     grid-column-gap: 20px; }
+    @media screen and (max-width: 550px) {
+      .gallery__item {
+        grid-template-rows: 130px; } }
   .gallery .item__size--2-1 {
     grid-template-columns: 2fr 1fr; }
+    @media screen and (max-width: 550px) {
+      .gallery .item__size--2-1 {
+        grid-template-columns: 1fr 1fr; } }
   .gallery .item__size--1-2 {
     grid-template-columns: 1fr 2fr; }
+    @media screen and (max-width: 550px) {
+      .gallery .item__size--1-2 {
+        grid-template-columns: 1fr 1fr; } }
   .gallery .item__photo {
     display: block;
     border-radius: 8px;
@@ -291,6 +493,9 @@ strong {
     margin: 24px 0 40px;
     font-size: 16px;
     line-height: 27px; }
+    @media screen and (max-width: 550px) {
+      .gallery__caption {
+        margin: 16px 0 32px; } }
   .gallery__button {
     display: block;
     margin: 0 auto;
@@ -304,11 +509,6 @@ strong {
       background-color: #0075ff;
       cursor: pointer; }
 
-.heading {
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -1.5px; }
-
 .gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
   content: url(../images/crown.svg);
   position: absolute;
@@ -330,8 +530,21 @@ strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.toggle__span::before, .toggle__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
 .consultation {
   margin-bottom: 152px; }
+  @media screen and (max-width: 550px) {
+    .consultation {
+      margin-bottom: 64px; } }
   .consultation__heading {
     margin: 0 auto;
     position: relative;
@@ -344,8 +557,17 @@ strong {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media screen and (max-width: 550px) {
+      .consultation__wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .consultation__info {
     width: 40%; }
+    @media screen and (max-width: 550px) {
+      .consultation__info {
+        width: 100%; } }
   .consultation__info-heading {
     margin: 0 auto 16px; }
   .consultation__info-text {
@@ -355,6 +577,10 @@ strong {
     line-height: 27px; }
   .consultation__form {
     width: 40%; }
+    @media screen and (max-width: 550px) {
+      .consultation__form {
+        width: 100%;
+        margin-top: 16px; } }
   .consultation .form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -403,11 +629,6 @@ strong {
               box-shadow: none;
       cursor: pointer; }
 
-.heading {
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -1.5px; }
-
 .gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
   content: url(../images/crown.svg);
   position: absolute;
@@ -429,13 +650,34 @@ strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.toggle__span::before, .toggle__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
 .testimonials {
   margin-bottom: 152px; }
+  @media screen and (max-width: 550px) {
+    .testimonials {
+      margin-bottom: 64px; } }
   .testimonials__heading {
     margin: 0 auto;
     position: relative;
     text-align: center;
     margin-bottom: 93px; }
+  .testimonials__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; }
+    @media screen and (max-width: 550px) {
+      .testimonials__wrap {
+        grid-template-columns: 1fr;
+        grid-row-gap: 48px; } }
   .testimonials .person {
     max-width: 240px;
     text-align: center; }
@@ -458,15 +700,6 @@ strong {
       font-weight: normal;
       color: #3e3e3e;
       margin: 4px 0 0; }
-  .testimonials__wrap {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center; }
-
-.heading {
-  font-size: 48px;
-  line-height: 48px;
-  letter-spacing: -1.5px; }
 
 .gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
   content: url(../images/crown.svg);
@@ -489,6 +722,16 @@ strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.toggle__span::before, .toggle__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
 .contacts__heading {
   margin: 0 auto;
   position: relative;
@@ -498,9 +741,16 @@ strong {
 .contacts__wrap {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  @media screen and (max-width: 550px) {
+    .contacts__wrap {
+      grid-template-columns: 1fr;
+      grid-row-gap: 32px; } }
 
 .contacts__info {
   width: 80%; }
+  @media screen and (max-width: 550px) {
+    .contacts__info {
+      width: 100%; } }
 
 .contacts .info {
   display: -webkit-box;
@@ -509,6 +759,12 @@ strong {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 550px) {
+    .contacts .info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .contacts .info__title {
     font-size: 14px;
     line-height: 27px;
@@ -517,6 +773,9 @@ strong {
     margin: 0 0 8px; }
   .contacts .info__title--email {
     margin-top: 24px; }
+  @media screen and (max-width: 550px) {
+    .contacts .info__address {
+      margin-top: 24px; } }
   .contacts .info__link {
     font-size: 16px;
     line-height: 27px;
@@ -527,6 +786,9 @@ strong {
 .contacts__form {
   width: 80%;
   justify-self: self-end; }
+  @media screen and (max-width: 550px) {
+    .contacts__form {
+      width: 100%; } }
 
 .contacts .form {
   display: -webkit-box;
@@ -581,11 +843,20 @@ strong {
 
 .main {
   padding: 104px 120px 88px; }
+  @media screen and (max-width: 550px) {
+    .main {
+      padding: 64px 20px; } }
 
 .heading {
   font-size: 48px;
   line-height: 48px;
-  letter-spacing: -1.5px; }
+  letter-spacing: -1.5px;
+  margin-bottom: 93px; }
+  @media screen and (max-width: 550px) {
+    .heading {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 53px; } }
 
 .gallery__heading::before, .consultation__heading::before, .testimonials__heading::before, .contacts__heading::before {
   content: url(../images/crown.svg);
@@ -608,19 +879,39 @@ strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.toggle__span::before, .toggle__span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
 .footer {
   height: 359px;
   position: relative;
   background-image: url(../images/footer.png);
   background-size: cover;
   background-position: center; }
+  @media screen and (max-width: 550px) {
+    .footer {
+      height: 206px; } }
   .footer__logo {
     position: absolute;
     left: calc(50% - 115px / 2);
     bottom: 40px; }
+    @media screen and (max-width: 550px) {
+      .footer__logo {
+        bottom: 24px; } }
     .footer__logo .logo__img {
       width: 115px;
       height: 76px; }
+      @media screen and (max-width: 550px) {
+        .footer__logo .logo__img {
+          width: 77px;
+          height: 50px; } }
 
 body {
   background: #eee; }

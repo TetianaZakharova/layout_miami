@@ -21,6 +21,9 @@
 
 .consultation {
   margin-bottom: 152px; }
+  @media screen and (max-width: 550px) {
+    .consultation {
+      margin-bottom: 64px; } }
   .consultation__heading {
     margin: 0 auto;
     position: relative;
@@ -33,8 +36,17 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media screen and (max-width: 550px) {
+      .consultation__wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .consultation__info {
     width: 40%; }
+    @media screen and (max-width: 550px) {
+      .consultation__info {
+        width: 100%; } }
   .consultation__info-heading {
     margin: 0 auto 16px; }
   .consultation__info-text {
@@ -44,6 +56,10 @@
     line-height: 27px; }
   .consultation__form {
     width: 40%; }
+    @media screen and (max-width: 550px) {
+      .consultation__form {
+        width: 100%;
+        margin-top: 16px; } }
   .consultation .form {
     display: -webkit-box;
     display: -ms-flexbox;
