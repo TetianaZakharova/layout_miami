@@ -38,6 +38,11 @@ strong {
   line-height: 48px;
   letter-spacing: -1.5px; }
 
+.consultation__info-heading, .testimonials .person__name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0075ff; }
+
 .gallery__button, .consultation .button {
   height: 56px;
   font-size: 16px;
@@ -74,6 +79,11 @@ strong {
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -1.5px; }
+
+.consultation__info-heading, .testimonials .person__name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0075ff; }
 
 .gallery__button, .consultation .button {
   height: 56px;
@@ -145,6 +155,11 @@ strong {
   line-height: 48px;
   letter-spacing: -1.5px; }
 
+.consultation__info-heading, .testimonials .person__name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0075ff; }
+
 .gallery__button, .consultation .button {
   height: 56px;
   font-size: 16px;
@@ -157,6 +172,11 @@ strong {
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -1.5px; }
+
+.consultation__info-heading, .testimonials .person__name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0075ff; }
 
 .gallery__button, .consultation .button {
   height: 56px;
@@ -190,6 +210,11 @@ strong {
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -1.5px; }
+
+.consultation__info-heading, .testimonials .person__name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0075ff; }
 
 .gallery__button, .consultation .button {
   height: 56px;
@@ -251,6 +276,11 @@ strong {
   line-height: 48px;
   letter-spacing: -1.5px; }
 
+.consultation__info-heading, .testimonials .person__name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0075ff; }
+
 .gallery__button, .consultation .button {
   height: 56px;
   font-size: 16px;
@@ -259,75 +289,134 @@ strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-.consultation__heading {
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  margin-bottom: 93px; }
-  .consultation__heading::before {
-    content: url(../images/crown.svg);
-    position: absolute;
-    width: 23px;
-    height: 16px;
-    top: 50%;
-    left: calc(50% - 11.5px); }
-
-.consultation__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.consultation__info {
-  width: 40%; }
-
-.consultation__info-heading {
-  font-size: 24px;
-  line-height: 30px;
-  color: #0075ff;
-  margin: 0 auto 16px; }
-
-.consultation__info-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 27px; }
-
-.consultation__form {
-  width: 40%; }
-
-.consultation .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .consultation .form__item {
-    margin-bottom: 16px; }
-  .consultation .form__input {
-    width: 100%;
-    height: 48px;
-    background: #f7f8ff;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 17px; }
-
-.consultation .button {
-  color: #fff;
-  background: #0075ff;
-  -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
-          box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
-  border: 1px solid transparent;
-  margin-top: 16px; }
+.consultation {
+  margin-bottom: 152px; }
+  .consultation__heading {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 93px; }
+    .consultation__heading::before {
+      content: url(../images/crown.svg);
+      position: absolute;
+      width: 23px;
+      height: 16px;
+      top: 50%;
+      left: calc(50% - 11.5px); }
+  .consultation__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .consultation__info {
+    width: 40%; }
+  .consultation__info-heading {
+    margin: 0 auto 16px; }
+  .consultation__info-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 27px; }
+  .consultation__form {
+    width: 40%; }
+  .consultation .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .consultation .form__item {
+      margin-bottom: 16px; }
+    .consultation .form__input {
+      width: 100%;
+      height: 48px;
+      background: #f7f8ff;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 17px; }
+  .consultation .button {
+    color: #fff;
+    background: #0075ff;
+    -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+            box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
+    border: 1px solid transparent;
+    margin-top: 16px;
+    -webkit-transition: color, background-color, 0.2s ease-in-out;
+    transition: color, background-color, 0.2s ease-in-out; }
+    .consultation .button:hover {
+      color: #0075ff;
+      background-color: #fff;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      cursor: pointer; }
 
 .main {
   padding: 104px 120px 88px; }
+
+.heading {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.5px; }
+
+.consultation__info-heading, .testimonials .person__name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #0075ff; }
+
+.gallery__button, .consultation .button {
+  height: 56px;
+  font-size: 16px;
+  line-height: 14px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.testimonials {
+  margin-bottom: 152px; }
+  .testimonials__heading {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 93px; }
+    .testimonials__heading::before {
+      content: url(../images/crown.svg);
+      position: absolute;
+      width: 23px;
+      height: 16px;
+      top: 50%;
+      left: calc(50% - 11.5px); }
+  .testimonials .person {
+    max-width: 240px;
+    text-align: center; }
+    .testimonials .person__photo {
+      width: 153px;
+      height: 153px;
+      border-radius: 50%; }
+    .testimonials .person__name {
+      margin: 28px 0 0; }
+    .testimonials .person__position {
+      font-size: 14px;
+      line-height: 27px;
+      font-weight: normal;
+      color: #9fadc2;
+      text-align: center;
+      margin: 4px 0; }
+    .testimonials .person__text {
+      font-size: 16px;
+      line-height: 27px;
+      font-weight: normal;
+      color: #3e3e3e;
+      margin: 4px 0 0; }
+  .testimonials__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; }
 
 body {
   background: #eee; }
