@@ -37,12 +37,6 @@
 .toggle__contact {
   margin-top: 16px; }
 
-.toggle .contact__info {
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 2px;
-  color: #fff; }
-
 .toggle__menu:checked ~ .toggle__mobile {
   display: block;
   padding: 120px 20px 52px;
@@ -88,5 +82,11 @@
   top: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg); }
+
+.toggle .contact__info {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  color: #fff; }
 
 /*# sourceMappingURL=toggle.css.map */
