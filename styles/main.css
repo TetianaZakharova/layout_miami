@@ -615,15 +615,12 @@ strong {
   background-size: cover;
   background-position: center; }
   .footer__logo {
-    height: 76px;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: calc(50% - 115px / 2);
     bottom: 40px; }
+    .footer__logo .logo__img {
+      width: 115px;
+      height: 76px; }
 
 body {
   background: #eee; }
