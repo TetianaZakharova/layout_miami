@@ -94,6 +94,10 @@
     font-size: 14px;
     line-height: 14px;
     font-weight: normal; }
+    .contacts .form__input:focus {
+      -webkit-box-shadow: 8px 8px 8px rgba(49, 59, 75, 0.19);
+              box-shadow: 8px 8px 8px rgba(49, 59, 75, 0.19);
+      border-radius: 5px; }
     .contacts .form__input::-webkit-input-placeholder {
       color: #b9c1ce; }
     .contacts .form__input::-moz-placeholder {
@@ -106,6 +110,10 @@
       color: #b9c1ce; }
   .contacts .form__textarea {
     height: 144px; }
+  .contacts .form:focus {
+    -webkit-box-shadow: 8px 8px 8px rgba(49, 59, 75, 0.19);
+            box-shadow: 8px 8px 8px rgba(49, 59, 75, 0.19);
+    border-radius: 5px; }
 
 .contacts .button {
   color: #fff;
@@ -116,6 +124,10 @@
   margin-top: 16px;
   -webkit-transition: color, background-color, 0.2s ease-in-out;
   transition: color, background-color, 0.2s ease-in-out; }
+  .contacts .button:focus {
+    -webkit-box-shadow: 8px 8px 8px rgba(1, 22, 39, 0.75);
+            box-shadow: 8px 8px 8px rgba(1, 22, 39, 0.75);
+    border-radius: 5px; }
   .contacts .button:hover {
     color: #0075ff;
     background-color: #fff;

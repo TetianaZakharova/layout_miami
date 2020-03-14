@@ -23,4 +23,23 @@ ul {
 strong {
   font-weight: 500; }
 
+textarea {
+  resize: none; }
+
+.logo,
+label,
+input,
+textarea,
+button,
+a {
+  outline: none; }
+  .logo:focus,
+  label:focus,
+  input:focus,
+  textarea:focus,
+  button:focus,
+  a:focus {
+    background: rgba(107, 159, 202, 0.56);
+    border-radius: 5px; }
+
 /*# sourceMappingURL=reset.css.map */

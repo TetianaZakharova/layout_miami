@@ -92,6 +92,10 @@
         color: #b9c1ce; }
       .consultation .form__input::placeholder {
         color: #b9c1ce; }
+      .consultation .form__input:focus {
+        -webkit-box-shadow: 8px 8px 8px rgba(49, 59, 75, 0.19);
+                box-shadow: 8px 8px 8px rgba(49, 59, 75, 0.19);
+        border-radius: 5px; }
   .consultation .button {
     color: #fff;
     background: #0075ff;
@@ -101,6 +105,10 @@
     margin-top: 16px;
     -webkit-transition: color, background-color, 0.2s ease-in-out;
     transition: color, background-color, 0.2s ease-in-out; }
+    .consultation .button:focus {
+      -webkit-box-shadow: 8px 8px 8px rgba(1, 22, 39, 0.75);
+              box-shadow: 8px 8px 8px rgba(1, 22, 39, 0.75);
+      border-radius: 5px; }
     .consultation .button:hover {
       color: #0075ff;
       background-color: #fff;
