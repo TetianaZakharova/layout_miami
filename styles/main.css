@@ -305,6 +305,7 @@ a {
       border-radius: 5px; }
     @media screen and (max-width: 550px) {
       .header__logo {
+        left: calc(50% - 77px / 2);
         margin-top: -24px; } }
     .header__logo .logo__img {
       width: 115px;
@@ -1059,6 +1060,7 @@ a {
     bottom: 40px; }
     @media screen and (max-width: 550px) {
       .footer__logo {
+        left: calc(50% - 77px / 2);
         bottom: 24px; } }
     .footer__logo .logo__img {
       width: 115px;
